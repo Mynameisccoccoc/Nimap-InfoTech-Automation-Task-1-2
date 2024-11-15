@@ -37,24 +37,24 @@ public class Nimap_Auto_3 {
 	   WebElement element1 = driver.findElement(By.xpath("//span[@class='mat-button-wrapper' and normalize-space(text())='New Customer']"));
 	   element1.click();
 	   Thread.sleep(2000);
-//	   driver.findElement(By.xpath("//INPUT[@formcontrolname='LeadName']")).sendKeys("Abz Mobz");
-//	   Thread.sleep(2000);
-//	   driver.findElement(By.xpath("//INPUT[@formcontrolname='RefNo']")).sendKeys("FMUPA8705C");
-//	   Thread.sleep(2000);
-//	   driver.findElement(By.xpath("//INPUT[@formcontrolname='PersonName']")).sendKeys("Abz Mobz");
-//	   Thread.sleep(2000);
-//	   driver.findElement(By.xpath("//INPUT[@formcontrolname='MobileNo']")).sendKeys("1234987647");
-//	   Thread.sleep(2000);
-//	   driver.findElement(By.xpath("//INPUT[@formcontrolname='Email']")).sendKeys("Abz@gmail.com");
-//	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//INPUT[@formcontrolname='LeadName']")).sendKeys("Abz Mobz");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//INPUT[@formcontrolname='RefNo']")).sendKeys("FMUPA8705C");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//INPUT[@formcontrolname='PersonName']")).sendKeys("Abz Mobz");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//INPUT[@formcontrolname='MobileNo']")).sendKeys("1234987647");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//INPUT[@formcontrolname='Email']")).sendKeys("Abz@gmail.com");
+	   Thread.sleep(2000);
 	   driver.findElement(By.xpath("//INPUT[@formcontrolname='Address']")).sendKeys("Block D, 16B, Satsang Colony, Seminary Hills, Nagpur, Maharashtra 440007, India");
 	   Thread.sleep(2000);
 	   driver.findElement(By.xpath("//BUTTON[@class='mat-focus-indicator float-right mat-raised-button mat-button-base mat-primary' ]")).click();
 	   Thread.sleep(2000);
-//	   WebElement el = driver.findElement(By.xpath("//DIV[@CLASS='mat-select-arrow-wrapper ng-tns-c80-90']"));
-//	   el.click();
-//	   driver.findElement(By.xpath("//span[@class='mat-option-text' and text()= ' India ']")).click();
-//	   Thread.sleep(2000);
+	   WebElement el = driver.findElement(By.xpath("//DIV[@CLASS='mat-select-arrow-wrapper ng-tns-c80-90']"));
+	   el.click();
+	   driver.findElement(By.xpath("//span[@class='mat-option-text' and text()= ' India ']")).click();
+	   Thread.sleep(2000);
 	   WebElement hj = driver.findElement(By.xpath("//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c80-93 ng-star-inserted' and text()= 'State']"));
 	   hj.click();
 	   driver.findElement(By.xpath("//span[@class='mat-option-text' and text()= ' Maharashtra ' ]")).click();
@@ -78,11 +78,10 @@ public class Nimap_Auto_3 {
 	   driver.findElement(By.xpath("//span[@class='mat-option-text' and text()='Opportunity ' ]")).click();
 	   Thread.sleep(2000);
 	   driver.findElement(By.id("mat-input-27")).sendKeys("#UrbanExploration");
-	   Thread.sleep(2000);
-	   
+	   Thread.sleep(2000); 
 	}
 	@AfterMethod
-	 public void tearDown() {
-		driver.quit();
-		}
+	public void tearDown() {
+	driver.quit();
+	}
 }
