@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 
 public class Nimap_Auto_2 {
 	WebDriver driver;
-
 	@BeforeMethod
 	public void setUp() {
 	driver = new ChromeDriver();
